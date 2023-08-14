@@ -9,6 +9,7 @@ interface ButtonProps {
   isDisabled?: boolean;
   variant?: Variant;
   colorSchema: ColorSchema;
+  onClick?:() => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
