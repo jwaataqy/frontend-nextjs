@@ -4,7 +4,7 @@ interface InputProps {
   isError: boolean;
   messageError?: string;
   value: number|string;
-  id:number;
+  id:number | string;
   name:string;
 }
 

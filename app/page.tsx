@@ -2,7 +2,7 @@
 import { type } from "os";
 import Button from "./component/button";
 import BelajarState from "./module/module.belajarState";
-import InputText from "./component/input";
+import InputText from "./component/inputText";
 import Label from "./component/Label";
 // import Latihan from "./component/latihan";
 // import Note from "./component/note";
@@ -78,6 +78,7 @@ const Home = () => {
           id="name"
           name="name"
           value={"Rajwaa"}
+          isError ={false}
           onChange={() => {
             console.log("ok");
           }}
