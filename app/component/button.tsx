@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
         "bg-red-500  text-white":
           colorSchema === "red" && variant === "solid" && isDisabled === false,
         "bg-red-300  text-white": colorSchema === "red" && variant === "solid",
-        "opaci
+        "opacity-50" : isDisabled,
 
       })}
     >
