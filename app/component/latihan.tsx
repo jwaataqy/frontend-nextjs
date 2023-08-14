@@ -10,6 +10,7 @@ interface identitas {
 };
 
 export default function Latihan(props:identitas){
+    console.log('Props',props)
     return(
         <main>
             <dl>
