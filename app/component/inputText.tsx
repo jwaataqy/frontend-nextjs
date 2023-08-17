@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 interface InputProps {
-  isError: boolean;
+  isError?: boolean;
   messageError?: string;
   value: number|string;
   id:number | string;

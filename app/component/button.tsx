@@ -9,7 +9,7 @@ interface ButtonProps {
   isDisabled?: boolean;
   variant?: Variant;
   colorSchema: ColorSchema;
-  onClick?:() => void;
+  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       disabled={isDisabled}
-      className={clsx(`w-16 h-8 rounded border`, {
+      className={clsx(`w-24 h-8 rounded border`, {
         "bg-blue-500 border-solid text-white":
           colorSchema === "blue" && variant === "solid",
         // "bg-blue-100 border-solid text-white opacity-20":
@@ -38,9 +38,10 @@ const Button: React.FC<ButtonProps> = ({
         "bg-red-500  text-white":
           colorSchema === "red" && variant === "solid" && isDisabled === false,
         "bg-red-300  text-white": colorSchema === "red" && variant === "solid",
-        "opacity-50" : isDisabled,
-
+        "opacity-50": isDisabled,
+        // "border-2 border-red-500 text-red-500" : title === "clear" 
       })}
+      {...props}
     >
       {title}
     </button>
