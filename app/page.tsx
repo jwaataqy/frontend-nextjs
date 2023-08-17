@@ -121,7 +121,7 @@ const Home = () => {
         }}
       /> */}
 
-      {/* Latihan */}
+      {/* Latihan State*/}
 
       <section className="justify-end flex flex-col gap-8 ml-8">
         <Card
