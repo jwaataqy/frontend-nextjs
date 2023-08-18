@@ -3,7 +3,7 @@ import { type } from "os";
 import Button from "./component/button";
 // import BelajarState from "./module/module.belajarState";
 import InputText from "./component/inputText";
-import Label from "./component/label";
+import Label from "./component/Label";
 // import Latihan from "./component/latihan";
 // import Note from "./component/note";
 import { useState } from "react";
